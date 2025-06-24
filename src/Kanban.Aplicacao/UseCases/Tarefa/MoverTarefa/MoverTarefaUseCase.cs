@@ -29,6 +29,8 @@ public class MoverTarefaUseCase : IMoverTarefaUseCase
 
         if (request.NovaOrdem.HasValue)
             tarefa.Ordem = request.NovaOrdem.Value;
+
+        tarefa.Status = request.NovoStatus;
         tarefa.DataAtualizacao = DateTime.UtcNow;
 
         var tarefaAtualizada = await _tarefaRepository.AtualizarAsync(tarefa);
