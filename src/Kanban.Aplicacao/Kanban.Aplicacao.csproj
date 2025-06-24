@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kanban.Comunicacao\Kanban.Comunicacao.csproj" />
+    <ProjectReference Include="..\Kanban.Dominio\Kanban.Dominio.csproj" />
+    <ProjectReference Include="..\Kanban.Exceptions\Kanban.Exceptions.csproj" />
+    <ProjectReference Include="..\Kanban.Infraestrutura\Kanban.Infraestrutura.csproj" />
+  </ItemGroup>
+
+</Project>

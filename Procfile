@@ -1,0 +1,1 @@
+web: dotnet Kanban.API.dll --urls=http://0.0.0.0:$PORT

@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: kambam-postgres
+    environment:
+      POSTGRES_DB: kambamdb
+      POSTGRES_USER: usuario123
+      POSTGRES_PASSWORD: usuario123
+      POSTGRES_INITDB_ARGS: "--auth-host=md5"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U usuario123 -d kambamdb"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - tarefa-network
+
+networks:
+  tarefa-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local

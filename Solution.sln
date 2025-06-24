@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{15DF7219-CF20-4181-A966-61F951C53511}"
+	ProjectSection(SolutionItems) = preProject
+		src\docker-compose.yml = src\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2004D0D8-422A-48BD-8D2A-91152E4185AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Api", "src\Kanban.Api\Kanban.Api.csproj", "{18457C0A-7A6E-4780-A167-9921A7A7C0A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Aplicacao", "src\Kanban.Aplicacao\Kanban.Aplicacao.csproj", "{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Dominio", "src\Kanban.Dominio\Kanban.Dominio.csproj", "{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Comunicacao", "src\Kanban.Comunicacao\Kanban.Comunicacao.csproj", "{72413A10-E4FF-4D9F-A14A-605117278EAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Infraestrutura", "src\Kanban.Infraestrutura\Kanban.Infraestrutura.csproj", "{07447A1A-1C2F-448A-805A-7B6D2C9D4991}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.Exceptions", "src\Kanban.Exceptions\Kanban.Exceptions.csproj", "{D68630A7-345C-4CBD-A3C0-F21514249CC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanban.tests", "tests\Kanban.tests\Kanban.tests.csproj", "{7CF06BA1-A77A-4AAC-BA46-16CF36692839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18457C0A-7A6E-4780-A167-9921A7A7C0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18457C0A-7A6E-4780-A167-9921A7A7C0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18457C0A-7A6E-4780-A167-9921A7A7C0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18457C0A-7A6E-4780-A167-9921A7A7C0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72413A10-E4FF-4D9F-A14A-605117278EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72413A10-E4FF-4D9F-A14A-605117278EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72413A10-E4FF-4D9F-A14A-605117278EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72413A10-E4FF-4D9F-A14A-605117278EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07447A1A-1C2F-448A-805A-7B6D2C9D4991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07447A1A-1C2F-448A-805A-7B6D2C9D4991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07447A1A-1C2F-448A-805A-7B6D2C9D4991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07447A1A-1C2F-448A-805A-7B6D2C9D4991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68630A7-345C-4CBD-A3C0-F21514249CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68630A7-345C-4CBD-A3C0-F21514249CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68630A7-345C-4CBD-A3C0-F21514249CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68630A7-345C-4CBD-A3C0-F21514249CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF06BA1-A77A-4AAC-BA46-16CF36692839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF06BA1-A77A-4AAC-BA46-16CF36692839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF06BA1-A77A-4AAC-BA46-16CF36692839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF06BA1-A77A-4AAC-BA46-16CF36692839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18457C0A-7A6E-4780-A167-9921A7A7C0A5} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{0FC0DD7F-9E86-425C-B69E-8CF05DA72BCD} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{94528C5C-2E7D-43E5-BCEC-82A6C78ED9B1} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{72413A10-E4FF-4D9F-A14A-605117278EAE} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{07447A1A-1C2F-448A-805A-7B6D2C9D4991} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{D68630A7-345C-4CBD-A3C0-F21514249CC8} = {15DF7219-CF20-4181-A966-61F951C53511}
+		{7CF06BA1-A77A-4AAC-BA46-16CF36692839} = {2004D0D8-422A-48BD-8D2A-91152E4185AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7055E80B-DB3E-4A61-AEF8-1051696CD3F6}
+	EndGlobalSection
+EndGlobal
